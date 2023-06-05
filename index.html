@@ -20,6 +20,9 @@
             background-color: white;
             text-align: center;
             padding: 50px 80px;
+            font-size: 25px;
+            letter-spacing: 5px;
+
         }
         h3{
             text-transform: uppercase;
@@ -30,7 +33,7 @@
         /* Efeito Parallax*/
         .caixa1, .caixa2, .caixa3, .caixa4{
             position: relative;
-            border: 1px solid red;
+            border: 1px solid;
             height:100%;
             opacity: 0.7;
             background-repeat: no-repeat;
@@ -61,16 +64,20 @@
         }
         .conteudo-titulo{
             position: absolute;
-            left: 45%;
+            left: 0;
             top: 45%;
+            width: 100%;
+            text-align: center;
+
+            
+        }
+        .conteudo-titulo span.titulo{
             color: #fff;
             background-color: #111;
             padding: 18px;
             font-size: 25px;
             letter-spacing: 5px;
-        }
-        .conteudo-titulo span.titulo{
-
+            text-transform: uppercase;
         }
 
     </style>
@@ -79,11 +86,11 @@
 <body>
     <div class="caixa1">
         <div class="conteudo-titulo">
-            <span class="titulo">conteudo 1</span>
+            <span class="titulo">Se apaixone</span>
         </div>
     </div>
     <div class="conteudo">
-        <h3>Valentine's Day</h3>
+        <h3>Dia dos Namorados</h3>
         <p>Celebre o romance sob o espetáculo mágico do pôr do sol neste Dia dos Namorados. 
             Envolva-se na paleta de cores deslumbrantes enquanto o sol se despede no 
             horizonte, pintando o céu com tons de laranja, rosa e dourado. De mãos dadas, 
@@ -93,13 +100,19 @@
             beleza efêmera do momento e selando-o para sempre no coração.</p>
     </div>
     <div class="caixa2">
-        Caixa 2
+        <div class="conteudo-titulo">
+    </div>
+        <span class="titulo">Comemore</span>
     </div>
     <div class="caixa3">
-        Caixa 3
+        <div class="conteudo-titulo">
+            <span class="titulo">Se encante</span>
+        </div>
     </div>
     <div class="caixa4">
-        Caixa 4
+        <div class="conteudo-titulo">
+            <span class="titulo">Ame</span>
+        </div>
     </div>
 </body>
 </html>
