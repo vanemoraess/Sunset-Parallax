@@ -28,9 +28,17 @@
         }
        
         /* Efeito Parallax*/
-        .caixa1, .caixa2 {
+        .caixa1, .caixa2, .caixa3, .caixa4{
+            position: relative;
             border: 1px solid red;
             height:100%;
+            opacity: 0.7;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+
+
         }
 
         .caixa1 {
@@ -40,13 +48,39 @@
             background-image: url(img/imagem2.jpg);
 
         }
+        .caixa3 {
+            background-image: url(img/imagem3.jpg);
+
+        }
+        .caixa4 {
+            background-image: url(img/imagem4.jpg);
+
+        }
+        p{
+            margin-bottom: 20px;
+        }
+        .conteudo-titulo{
+            position: absolute;
+            left: 45%;
+            top: 45%;
+            color: #fff;
+            background-color: #111;
+            padding: 18px;
+            font-size: 25px;
+            letter-spacing: 5px;
+        }
+        .conteudo-titulo span.titulo{
+
+        }
 
     </style>
     
 </head>
 <body>
     <div class="caixa1">
-        Caixa 1
+        <div class="conteudo-titulo">
+            <span class="titulo">conteudo 1</span>
+        </div>
     </div>
     <div class="conteudo">
         <h3>Valentine's Day</h3>
@@ -60,6 +94,12 @@
     </div>
     <div class="caixa2">
         Caixa 2
+    </div>
+    <div class="caixa3">
+        Caixa 3
+    </div>
+    <div class="caixa4">
+        Caixa 4
     </div>
 </body>
 </html>
